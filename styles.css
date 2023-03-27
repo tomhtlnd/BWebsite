@@ -1,0 +1,23 @@
+#map{
+    position: absolute;
+    height: 95%; 
+    width: 90%; 
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.50);
+    margin: 0%;
+    padding: 0%; 
+}
+
+#map-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden; 
+}
+
+.current-location {
+    fill: rgb(255, 42, 42);
+  }
