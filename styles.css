@@ -1,9 +1,55 @@
+.row-normal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+#welcome {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.subtitle-normal {
+    font-weight: bold;
+    color: #26843c;
+}
+
+.img-normal {
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+    min-height: 300px;
+  }
+
+  .container-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .card-col{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .con-button{
+    text-align: center;
+  }
+
+  .card-tit{
+    font-weight: bold;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
 #map{
     position: relative;
     height: 95%; 
     width: 90%; 
     border-radius: 20px;
-    box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.50);
     margin: 0%;
     padding: 0%; 
 }
@@ -31,10 +77,17 @@
     overflow: hidden; 
 }
 
-.mission-title {
-    height: 20vh;
+.location-title {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .location-image {
     width: 100vh;
+}
+
+.row-location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
