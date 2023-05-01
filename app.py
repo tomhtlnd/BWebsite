@@ -97,6 +97,27 @@ def track_time(response):
         start_time = datetime.now()
         previous_path = 'Follow Up'
 
+    # Every time the user requests /follow_up route, time spent in the previous path is recorded in the database with log_data(). 
+    if request.path == '/pondok_event_center':
+        log_data()
+        # Update start_time and previous_path
+        start_time = datetime.now()
+        previous_path = 'Pondok Event Center'
+    
+    # Every time the user requests /follow_up route, time spent in the previous path is recorded in the database with log_data(). 
+    if request.path == '/lelylaan_station':
+        log_data()
+        # Update start_time and previous_path
+        start_time = datetime.now()
+        previous_path = 'Lelylaan Station'
+
+    # Every time the user requests /follow_up route, time spent in the previous path is recorded in the database with log_data(). 
+    if request.path == '/roeterseiland_campus':
+        log_data()
+        # Update start_time and previous_path
+        start_time = datetime.now()
+        previous_path = 'Roeterseiland Campus'
+
 
     # Every time the user requests  /confirmation route, time spent in the previous path is recorded in the database with log_data(). 
     if request.path == '/confirmation':
@@ -135,6 +156,18 @@ def overview():
 @app.route('/follow_up')
 def follow_up():
     return render_template('follow_up.html')
+
+@app.route('/pondok_event_center')
+def pondok_event_center():
+    return render_template('pondok_event_center.html')
+
+@app.route('/lelylaan_station')
+def lelylaan_station():
+    return render_template('lelylaan_station.html')
+
+@app.route('/roeterseiland_campus')
+def roeterseiland_campus():
+    return render_template('roeterseiland_campus.html')
 
 @app.route('/confirmation')
 def confirmation():
