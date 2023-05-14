@@ -1,3 +1,180 @@
+:root {
+  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-primary: "Roboto", sans-serif;
+  --font-secondary: "Work Sans", sans-serif;
+}
+
+/* Colors */
+:root {
+  --color-default: #393E46;
+  --color-primary: #6D9886;
+  --color-secondary: #ffffff;
+  --color-tertiary: #f8f9fa;
+}
+
+/* Smooth scroll behavior */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: var(--font-default);
+  color: var(--color-default);
+  overflow-x: hidden;
+  background: var(--color-secondary);
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-primary);
+}
+
+/*--------------------------------------------------------------
+# Hero Section (template)
+--------------------------------------------------------------*/
+.hero {
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.hero .img-container {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 0;
+  margin: 0;
+  position: relative;
+}
+
+.hero .img {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero .info {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+}
+
+.hero .info h2 {
+  color: #fff;
+  padding-bottom: 20px;
+  font-size: 56px;
+  font-weight: 700;
+  position: relative;
+}
+
+.hero .info p {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 18px;
+}
+
+.hero .info .btn-get-started {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 20px;
+  color: #fff;
+  border: 2px solid var(--color-primary);
+}
+
+.hero .info .btn-get-started:hover {
+  background: var(--color-primary);
+}
+
+  /*--------------------------------------------------------------
+# Navigation Bar
+--------------------------------------------------------------*/
+
+#mainNav {
+  background-color: var(--color-default);
+  color: var(--color-secondary);
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+/*--------------------------------------------------------------
+# Sections & Section Header (template)
+--------------------------------------------------------------*/
+
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background-color: var(--color-tertiary);
+}
+
+.section-header{
+  text-align: center;
+  font-weight: bold;
+}
+
+.section-subtitle{
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-primary);
+  padding-bottom: 40px;
+}
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 140px 0 60px 0;
+  min-height: 30vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbs h2 {
+  font-weight: bold;
+  font-size: 56px;
+  color: var(--color-secondary);
+}
+
+.followup-header{
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
 .row-normal{
     display: flex;
     justify-content: center;
@@ -61,10 +238,6 @@
   font-size: 14px;
 }
 
-  .custom-card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-
 .con-button{
   text-align: center;
 }
@@ -88,10 +261,6 @@
     padding: 0%;
     overflow: hidden; 
 }
-
-.current-location {
-    fill: rgb(255, 42, 42);
-  }
 
 .location-container {
   display: flex;
