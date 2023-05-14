@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'layout.html' %}
 
-<head>
-    <title>Follow Up</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+{% block head %}
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-    
-    <link rel="stylesheet" href="../static/styles.css">
-</head>
+    <title> Follow up </title>
 
-<body>
+{% endblock %}
+
+{% block body %}
+
     <nav class="navbar navbar-dark navbar-expand-md bg-dark navbar-shrink" style="background: rgb(0, 0, 0);">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -39,43 +31,36 @@
             </div>
         </div>
     </nav>
-    <div class="row">
-        <div class="col-md-8 col-xl-6 text-center mx-auto" style="padding-bottom: 30px; padding-top: 20px;">
-            <p class="fw-bold text-success"></p>
-            <h1 class="fw-bold">Become a change maker!</h1> 
-            <p class="lead text-muted">Scroll down for more follow-up information</p>  
+
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs d-flex align-items-center" style="background-image: url(static/img/UCI%20Photos/drone_bikelane.jpg);">
+        <div class="container position-relative d-flex flex-column align-items-center">
+
+        <h2>Become a change maker!</h2>
+        <h5 class="section-subtitle">Scroll down for more follow-up information</h5>
+
         </div>
-    </div>
-    <div class="container" style="padding-top: 20px; padding-bottom: 20px;">
-        <div class="container text-center">
-            <h2 class="fw-bold" style="padding-bottom: 10px;">Key Takeaways</h1>
-        </div>
+    </div><!-- End Breadcrumbs -->
+    
+    <div class="container" style="padding-top: 80px;">
+        <h2 class="followup-header">Key Takeaways</h2>
         <div class="row text-center bg-light rounded" style="padding-top: 40px; padding-bottom: 40px;">
             <div class="col-lg-4">
                 <h4 class="fw-bold">The Experience</h4>
                 <p class="fw-normal" style="padding-left: 40px; padding-right: 40px;">Cycling is simple, yet connects many problems and challenges of contemporary cities. It is intertwined with urban life in all its richness and complexity.</p>
             </div>
             <div class="col-lg-4">
-                <div class="mx-auto">
-                    <div class="d-flex features-icons-icon">
-                        <i class="icon-layers m-auto text primary"></i>
-                    </div>
-                    <h4 class="fw-bold">Location</h4>
-                    <p style="padding-left: 40px; padding-right: 40px;">Bike around the city's streets, canals, and bike lanes to various spots in Amsterdam and observe and experience how cycling is woven into urban life. </p>
-                </div>
+                <h4 class="fw-bold">Location</h4>
+                <p style="padding-left: 40px; padding-right: 40px;">Bike around the city's streets, canals, and bike lanes to various spots in Amsterdam and observe and experience how cycling is woven into urban life. </p>
             </div>
             <div class="col-lg-4">
-                <div class="mx-auto">
-                    <div class="d-flex features-icons-icon">
-                        <i class="icon-check m-auto text-primary"></i>
-                    </div>
-                    <h4 class="fw-bold">Network</h4>
-                    <p style="padding-left: 40px; padding-right: 40px;">Providing a fertile ground for sharing knowledge and learning about urban cycling, participating in a bike scavenger hunt with urban planners creates new networking opportunities, fostering connections with professionals.</p>
-                </div>
+                <h4 class="fw-bold">Network</h4>
+                <p style="padding-left: 40px; padding-right: 40px;">Providing a fertile ground for sharing knowledge and learning about urban cycling, participating in a bike scavenger hunt with urban planners creates new networking opportunities, fostering connections with professionals.</p>
             </div>
         </div>
     </div>
-    <div class="container" style="padding-top: 40px; padding-bottom: 20px;">
+    
+    <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-6 col-xl-6 text-md-start" style="padding-right: 80px;">
                 <div>
@@ -93,7 +78,8 @@
             </div>
         </div>
     </div>
-    <div class="container" style="padding-top: 20px; padding-bottom: 40px;">
+
+    <div class="container">
         <div class="row align-items-center justify-content-center">
             <div class="col-md-6 col-xl-3">
                 <div><img class="ill-normal" src="../static/img/UCI Photos/change maker.png" width="400" height="300"></div>
@@ -111,12 +97,13 @@
             </div>
         </div>
     </div>
+
     <div class="container" style="padding-top: 20px; padding-bottom: 20px; margin-bottom: 50px;">
         <div class="row text-center bg-light rounded" style="padding-top: 40px; padding-bottom: 40px;">
             <div class="col-lg-4">
                 <h4 class="fw-bold">Follow us!</h4>
                 <p class="fw-normal" style="padding-left: 40px; padding-right: 40px;"></p>
-                <div class="container text-center" style="padding-top: 30px;">
+                <div class="container text-center">
                     <a class="btn btn-primary" href="/log_binary" role="button">Follow</a>
                 </div>
             </div>
@@ -126,6 +113,10 @@
                         <i class="icon-layers m-auto text primary"></i>
                     </div>
                     <h4 class="fw-bold">Coursera course</h4>
+                    <p>Unravelling the Cycling City, the world's first academic online course on cycling, is offered by the Univeristy of Amsterdam on Coursera. Join more than 8,000 others that have already enrolled!</p>
+                    <h1><a href="https://www.coursera.org/learn/unraveling-the-cycling-city" button class "btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index" viewBox="0 0 16 16">
+                        <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435a4.9 4.9 0 0 1 .106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
+                    </button></svg></a></h1>
                     <p style="padding-left: 40px; padding-right: 40px;"></p>
                 </div>
             </div>
@@ -151,21 +142,8 @@
                 </div>
             </div>
         </div>
-    </div>
-            <!-- <head>
-                <script src="https://kit.fontawesome.com/3eea8b4712.js" crossorigin="anonymous"></script>
-                <body>
-                    <i class="fa-brands fa-facebook fa-2xl"></i>
-                            <i class="fa-brands fa-twitter fa-2xl"></i>
-                            <i class="fa-brands fa-instagram fa-2xl"></i>
-                            <i class="fa-brands fa-google fa-2xl"></i>
-                            <i class="fa-brands fa-linkedin fa-2xl"></i>
-                            <i class="fa-sharp fa-regular fa-envelope fa-2xl"></i>
-                            <i class="fa-regular fa-user fa-2xl"></i>
-                    </nav>
-                </body>
-            </head> -->
         <div class="container text-center" style="padding-top: 30px;">
             <a class="btn btn-primary" href="/confirmation" role="button">Done</a>
         </div>
-</html>
+    </div>
+{% endblock %}

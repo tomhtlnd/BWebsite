@@ -112,6 +112,13 @@ def track_time(response):
         previous_path = 'Lelylaan Station'
 
     # Every time the user requests /follow_up route, time spent in the previous path is recorded in the database with log_data(). 
+    if request.path == '/heemstedestraat':
+        log_data()
+        # Update start_time and previous_path
+        start_time = datetime.now()
+        previous_path = 'heemstedestraat'
+
+    # Every time the user requests /follow_up route, time spent in the previous path is recorded in the database with log_data(). 
     if request.path == '/roeterseiland_campus':
         log_data()
         # Update start_time and previous_path
@@ -168,6 +175,10 @@ def lelylaan_station():
 @app.route('/roeterseiland_campus')
 def roeterseiland_campus():
     return render_template('roeterseiland_campus.html')
+
+@app.route('/heemstedestraat')
+def heemstedestraat():
+    return render_template('heemstedestraat.html')
 
 @app.route('/confirmation')
 def confirmation():
