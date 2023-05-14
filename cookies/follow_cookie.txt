@@ -1,0 +1,6 @@
+Accumulated Follow clicks2023-05-14 23:35:22.303393: 1
+Accumulated Follow clicks2023-05-14 23:35:39.778844: 2
+Accumulated Follow clicks2023-05-14 23:36:05.552759: 3
+Accumulated Follow clicks2023-05-14 23:36:08.833677: 4
+Accumulated Follow clicks2023-05-14 23:37:58.049285: 5
+Accumulated Follow clicks2023-05-14 23:38:48.652193: 1
