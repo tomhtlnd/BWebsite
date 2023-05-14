@@ -12,6 +12,7 @@ function initMap(){
     const markers = [
       ["Pondok Event Center", 52.3498386119879, 4.844201111220656, '/pondok_event_center'],
       ["Lelylaan Station", 52.357061619563216, 4.833977140057547, '/lelylaan_station'],
+      ["Heemstedestraat", 52.35190017507641, 4.840945023147366, '/heemstedestraat'],
       ["Roeterseiland Campus", 52.363967853560744, 4.911361384240066, '/roeterseiland_campus'],
     ];
   
