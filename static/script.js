@@ -13,6 +13,9 @@ function initMap(){
       ["Pondok Event Center", 52.3498386119879, 4.844201111220656, '/pondok_event_center'],
       ["Lelylaan Station", 52.357061619563216, 4.833977140057547, '/lelylaan_station'],
       ["Heemstedestraat", 52.35190017507641, 4.840945023147366, '/heemstedestraat'],
+      ["Centraal station", 52.37819918272987, 4.90056555085227, '/central_station'],
+      ["Sint Antoniesbreestraat", 52.37073330039969, 4.900632333745544, '/sint_antoniesbreestraat'],
+      ["Botanical gardens", 52.367214652369206, 4.90827080072837, '/botanical_gardens'],
       ["Roeterseiland Campus", 52.363967853560744, 4.911361384240066, '/roeterseiland_campus'],
     ];
   
@@ -30,23 +33,26 @@ function initMap(){
           window.location.href = currMarker[3];
       });
     }
+    calculateDirections(map);
+  }
 
-    const directionsService = new google.maps.DirectionsService();
+  function calculateDirections(map) {
+    var directionsService = new google.maps.DirectionsService();
     var directionsRenderer = new google.maps.DirectionsRenderer();
     directionsRenderer.setMap(map);
-
-    var pondok = new google.maps.LatLng(52.3498386119879, 4.844201111220656);
-    var lelylaan = new google.maps.LatLng(52.357061619563216, 4.833977140057547);
-
-    const request = {
-        origin: pondok,
-        destination: lelylaan,
-        travelMode: 'DRIVING',
+  
+    var start = 'Lelylaan Station, Amsterdam';
+    var end = 'Heemstedestraat, Amsterdam';
+  
+    var request = {
+      origin: start,
+      destination: end,
+      travelMode: 'DRIVING'
     };
-
-    directionsService.route(request, function(response, status) {
-        if (status == 'OK') {
-          directionsRenderer.setDirections(response);
-        }
-      });
+  
+    directionsService.route(request, function (result, status) {
+      if (status == 'OK') {
+        directionsRenderer.setDirections(result);
+      }
+    });
   }
