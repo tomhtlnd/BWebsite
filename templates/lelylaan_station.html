@@ -7,17 +7,14 @@
 {% endblock %}
 
 {% block body %}
-    
-    <div class="row location-title">
-        <div class="col text-center">
-            <h1>OV-Fiets system</h1>
-            <span>Lelylaan station
-            </span>
-        </div>
+
+    <div class="container text-center" style="padding-top: 60px; padding-bottom: 40px;">
+        <h1 class="fw-bold">OV-Fiets system</h1>
+        <span>Lelylaan station</span>
     </div>
-    
-    <!--New mission layout-->
-    <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
+            
+    <!--Missions layout-->
+    <div class="container" style="padding-bottom: 40px;">
      
         <div class="row section-bg">
             
@@ -26,8 +23,6 @@
 
                     <div class="col-md-6 col-xl-6 text-md-start" style="padding-right: 80px;">
                         <div>
-                            <h1 class="fw-bold">Missions</h1>
-                            <p></p>
                             <h2 class="card-text">Interview a local (200 points)</h2>
                             <p>Find the person supervising the “OV-Fiets” at the Lelylaan station, a large hub for transit in Amsterdam. Ask them:</p>
                         </div>
@@ -39,6 +34,10 @@
                                 <div class="card-body">
                                     <h5 class="card-text">A.</h5>
                                     <p>What is the OV-Fiets system?</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
                                 </div>
                             </div>
                         </a>    
@@ -48,6 +47,10 @@
                                 <div class="card-body">
                                     <h5 class="card-text">B.</h5>
                                     <p>How does someone use the system?</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -57,6 +60,10 @@
                                 <div class="card-body">
                                     <h5 class="card-text">C.</h5>
                                     <p>Is the system successful or growing?</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -70,6 +77,10 @@
                                 <div class="card-body">
                                     <h5 class="card-text">D.</h5>
                                     <p>How is the quality/durability of the bicycles?</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -93,6 +104,10 @@
                                 <div class="card-body">
                                     <h5 class="card-text">E.</h5>
                                     <p>How often do they use OV-Fiets?</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
                                 </div>
                             </div>
                         </a>    
@@ -102,6 +117,10 @@
                                 <div class="card-body">
                                     <h5 class="card-text">F.</h5>
                                     <p>What do they like about the system?</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
                                 </div>
                             </div>
                         </a>
@@ -111,9 +130,16 @@
                                 <div class="card-body">
                                     <h5 class="card-text">G.</h5>
                                     <p>Does taking the train+bike replace car trips?</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
                                 </div>
                             </div>
                         </a>
+                        </div>
+                        <div class="container text-center" style="padding: 20px;">
+                            <a class="btn btn-primary" role="button">Submit</a>
                         </div>
                     </div> 
 
@@ -123,20 +149,18 @@
         </div>
     </div>    
 
-    <div class="container">
+    <!--Info-->
+    <div class="container" style="padding-top: 25px; padding-bottom: 25px;">
         <div class="col-md-8 col-xl-6 text-center mx-auto" style="padding-bottom: 30px;">
             <p class="fw-bold text-success"></p>
-            <p></p>
             <h1 class="fw-bold"> Information </h1>
-
         </div>
-        <div class="container-fluid">
+        <div class="container">
             <div class="row justify-content-center align-items-center" style="padding-bottom: 40px;">
                 <div class="col-md-6 col-xl-4 text-md-start">
-                        <p style="color: rgb(0, 0, 0);">
-                        People frequently use rental bikes for efficient transportation inside Amsterdam. Amsterdam's primary mode of transit is biking, thus it would be fascinating for urban planners to observe how dependent people are on bikes. The success of the ov-fiets system can be seen by the urban planners for themselves, and they can see how they are easily accessible in most stations in Amsterdam so that people can conveniently come and borrow or leave their ov-fiet bike for convenience.
-                        <p></p>
-                        On an OV-fiets, people can enjoy the independence of finishing their journey. To quickly discover how many bicycles are available at the station of their choice, they can just check the NS app. You can rent an OV-fiets from various stations for just € 4.45 per day per bicycle, making it a well-known affordable choice for renting bicycles.
+                        <p style="color: rgb(0, 0, 0);">                        
+                            <p>People frequently use rental bikes for efficient transportation inside Amsterdam. Amsterdam's primary mode of transit is biking, thus it would be fascinating for urban planners to observe how dependent people are on bikes. The success of the ov-fiets system can be seen by the urban planners for themselves, and they can see how they are easily accessible in most stations in Amsterdam so that people can conveniently come and borrow or leave their ov-fiet bike for convenience.</p>
+                            On an OV-fiets, people can enjoy the independence of finishing their journey. To quickly discover how many bicycles are available at the station of their choice, they can just check the NS app. You can rent an OV-fiets from various stations for just € 4.45 per day per bicycle, making it a well-known affordable choice for renting bicycles.
                         </p>
                 </div>
                 <div class="col-md-6 col-xl-6" style="margin-left: 40px;">
@@ -145,9 +169,15 @@
             </div>
         </div>
         
-        <div class="container text-center" style="padding: 20px;">
-            <a class="btn btn-primary" href="map.html" role="button">Next</a>
+        <div class="container-fluid" style="padding-bottom: 40px;">
+            <div class="row justify-content-end">
+                <div class="col-12 col-md-10 col-lg-11"></div>
+                <div class="col-12 col-md-2 col-lg-1 text-right">
+                    <a class="btn btn-primary" href="/map" role="button">Next</a>
+                </div>
+            </div>
         </div>
         
     </div>
+    
 {% endblock %}

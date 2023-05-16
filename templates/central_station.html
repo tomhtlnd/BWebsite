@@ -7,77 +7,137 @@
 {% endblock %}
 
 {% block body %}
-    <div class="row location-title">
-        <div class="col text-center">
-            <h1 class="fw-bold">Traffic flow</h1>
-            <span> Central Station
-            <p>&rarr; Near city center</p></span>
-        </div>
+
+    <div class="container text-center" style="padding-top: 60px; padding-bottom: 40px;">
+        <h1 class="fw-bold">Traffic flow</h1>
+        <span>Central Station</span>
     </div>
-    <div class="row row-location">
+    
+    <!--Missions layout-->
+    <div class="container" style="padding-bottom: 40px;">
+        
+        <div class="row section-bg">
+
+            <div class="album py-5">
+                <div class="container">
+
+                    <!--Observation-->
+                    <div class="col-md-6 col-xl-6 text-md-start" style="padding-right: 80px;">
+                        <div>
+                            <h2 class="card-text">Observation (150 points)</h2>
+                            <p>At Central Station, find the bike tunnel leading to the ferries.</p>
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-body">
+                                    <h5 class="card-text">A.</h5>
+                                    <p>What is painted on the walls of the tunnel?</p>
+                                    <br>
+                                    <br>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>    
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-body">
+                                    <h5 class="card-text">B.</h5>
+                                    <p>North of the bike tunnel, near the ferries, you find a large area of “shared space”. Observe behavior for 5-10 minutes. Write down at least 5 “rules” for how people navigate the space.</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>    
+                        </div>
+                    </div>
+
+                    <!--Bonus-->
+                    <div class="col-md-6 col-xl-6 text-md-start" style="padding-right: 80px;">
+                        <div>
+                            <h2 class="card-text">&#9734; Bonus (200 points)</h2>
+                            <p>Obstruct the traffic flow by dropping something, walking aimlessly, etc. while your partner observes.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-body">
+                                    <h5 class="card-text">C.</h5>
+                                    <p>What happens to the flow?</p>
+                                    <br>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-body">
+                                    <h5 class="card-text">D.</h5>
+                                    <p>Show us the most outrageous thing you saw in the Central Station environment (with a photo as proof).</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        </div>
+                    </div>
+
+                    <!--Fieldwork-->
+                    <div class="col-md-6 col-xl-6 text-md-start" style="padding-right: 80px;">
+                        <div>
+                            <h2 class="card-text">Fieldwork (100 points)</h2>
+                            <p>At the shared space area, gather social data about cyclists you see: gender difference, children present, talking to someone, holding hands, carrying something, smiling, etc. Choose 3 different variables.</p>
+                        </div>
+                    </div>
+            
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="card mb-4 box-shadow">
+                                <div class="card-body">
+                                    <h5 class="card-text">E.</h5>
+                                    <p>How many out of 25 bicyclists for each factor do you observe?</p>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="exampleCheckbox">
+                                        <label class="form-check-label" for="exampleCheckbox"></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>    
+                        </div>
+                        <div class="container text-center" style="padding: 20px;">
+                            <a class="btn btn-primary" role="button">Submit</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
-    <div class="row row-normal">
-        <div class="col-md-8 col-xl-6 text-center mx-auto" style="padding-bottom: 30px;">
-            <p class="fw-bold text-success"></p>
-            <h1 class="fw-bold">Missions</h1>   
-        </div>
-        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-            <div class="col" style="margin-bottom: 2px;">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="fw-bold card-title" style="padding-bottom: 26px;">Observation (50 points)</h5>
-                        <p class="text-muted card-text mb-4"><span style="color: rgb(0, 0, 0);">At Central Station, find the bike tunnel leading to the ferries. What is painted on the walls of the tunnel?</span></p>
-                    </div>
-                </div>
+    <div class="container-fluid" style="padding-bottom: 40px;">
+        <div class="row justify-content-end">
+            <div class="col-12 col-md-10 col-lg-11"></div>
+            <div class="col-12 col-md-2 col-lg-1 text-right">
+                <a class="btn btn-primary" href="/map" role="button">Next</a>
             </div>
-            <div class="col" style="margin-bottom: 2px;">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="fw-bold card-title" style="padding-bottom: 26px;"> &#9734; Bonus (100 points)</h5>
-                        <p class="text-muted card-text mb-4"><span style="color: rgb(0, 0, 0);">Obstruct the traffic flow by [dropping something, walking aimlessly, etc] while your partner observes. What happens to the flow?</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row row-normal">
-        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-            <div class="col" style="margin-bottom: 2px;">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="fw-bold card-title" style="padding-bottom: 26px;">Observation (100 points)</h5>
-                        <p class="text-muted card-text mb-4"><span style="color: rgb(0, 0, 0);">North of the bike tunnel, near the ferries, you find a large area of “shared space”. Observe behavior for 5-10 minutes. Write down at least 5 “rules” for how people navigate the space.</span></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col" style="margin-bottom: 2px;">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="fw-bold card-title" style="padding-bottom: 26px;"> &#9734; Bonus (100 points)</h5>
-                        <p class="text-muted card-text mb-4"><span style="color: rgb(0, 0, 0);">Show us the most outrageous thing you saw (with a photo as proof).</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row row-normal">
-        <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
-            <div class="col" style="margin-bottom: 30px;">
-                <div class="card shadow-sm">
-                    <div class="card-body">
-                        <h5 class="fw-bold card-title" style="padding-bottom: 26px;">Fieldwork (100 points)</h5>
-                        <p class="text-muted card-text mb-4"><span style="color: rgb(0, 0, 0);">At the shared space area, gather social data about cyclists you see: gender difference, children present, talking to someone, holding hands, carrying something, smiling, etc). 
-                            <br>Choose 3 different variables. How many out of 25 bicyclists for each factor do you observe?</span></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row"></div>
-        <div class="container text-center">
-            <a class="btn btn-primary" href="map.html" role="button">Next</a>
         </div>
     </div>
 

@@ -108,6 +108,25 @@ h6 {
   background: var(--color-primary);
 }
 
+.btn-primary {
+  background-color: #6D9886;
+  border-color: #6D9886;
+  color: #FFFFFF;
+}
+
+.btn-primary:hover {
+  background-color: #5e8374;
+  border-color: #5e8374;
+  color: #FFFFFF;
+}
+
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #4d6c5f !important;
+  border-color: #4d6c5f !important;
+  color: #FFFFFF !important;
+}
+
   /*--------------------------------------------------------------
 # Navigation Bar
 --------------------------------------------------------------*/
@@ -293,4 +312,31 @@ section {
 .card-img{
   object-fit: cover;
   height: 200px;
+}
+
+.form-check {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+.form-check-input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #b2b2b2;
+  border-radius: 4px;
+  outline: none;
+  background-color: #f8f9fa;
+  cursor: pointer;
+}
+
+.form-check-input[type="checkbox"]:checked {
+  background-color: #6D9886; /* Replace with your desired color */
+}
+
+.form-check-input[type="checkbox"]:focus {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
