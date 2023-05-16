@@ -177,7 +177,7 @@ section {
 
 .breadcrumbs:before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   inset: 0;
 }
@@ -188,28 +188,14 @@ section {
   color: var(--color-secondary);
 }
 
+.breadcrumbs h5 {
+  color: var(--color-tertiary);
+}
+
 .followup-header{
   font-weight: bold;
   text-align: center;
   padding-bottom: 20px;
-}
-
-.row-normal{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-
-#welcome {
-    font-size: 50px;
-    font-weight: bold;
-}
-
-.subtitle-normal {
-    font-weight: bold;
-    color: #26843c;
 }
 
 .img-normal {
