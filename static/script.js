@@ -35,3 +35,8 @@ function initMap(){
       });
     }
   }
+
+function showVerificationMessage() {
+  var messageElement = document.getElementById("verification-message");
+  messageElement.style.display = "block";
+}
