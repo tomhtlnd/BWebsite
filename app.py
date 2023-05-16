@@ -225,7 +225,6 @@ def confirmation():
 # button_tracking() function saves the visitor_id in the database if the visitor clicked on the "Contact" button.  
 @app.route("/log_binary")
 def button_tracking():
-    make_follow_count()
     try:
         button_click = Button(
             visitor_id=session.get('visitor_id'),
@@ -234,20 +233,8 @@ def button_tracking():
         db.session.commit()
     except:
         pass
-    return redirect('/')
+    return redirect('/follow_up')
 
 
 if __name__ == '__main__':
     app.run(port=3000, debug=True)
-    
-def make_follow_count():
-    with follow_counter.get_lock():
-        follow_counter.value += 1
-        out = follow_counter.value
-        
-    print(f"These are follow clicks {out}")
-    
-    filename = "cookies/follow_cookie.txt"
-    f = open(filename, "a")
-    f.write(f"Accumulated Follow clicks{datetime.now()}: {out}\n")
-    f.close()
