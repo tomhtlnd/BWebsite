@@ -27,32 +27,11 @@ function initMap(){
           map,
           title: currMarker[0],
           animation: google.maps.Animation.DROP,
+          label: (i + 1).toString(),
         });
       
       marker.addListener("click", () => {
           window.location.href = currMarker[3];
       });
     }
-    calculateDirections(map);
-  }
-
-  function calculateDirections(map) {
-    var directionsService = new google.maps.DirectionsService();
-    var directionsRenderer = new google.maps.DirectionsRenderer();
-    directionsRenderer.setMap(map);
-  
-    var start = 'Lelylaan Station, Amsterdam';
-    var end = 'Heemstedestraat, Amsterdam';
-  
-    var request = {
-      origin: start,
-      destination: end,
-      travelMode: 'DRIVING'
-    };
-  
-    directionsService.route(request, function (result, status) {
-      if (status == 'OK') {
-        directionsRenderer.setDirections(result);
-      }
-    });
   }
