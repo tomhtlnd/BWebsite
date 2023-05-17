@@ -81,11 +81,11 @@ def track_time(response):
         previous_path = 'HomePage'
 
     # Every time the user requests /map route, time spent in the previous path is recorded in the database with log_data(). 
-    if request.path == '/map':
+    if request.path == '/missions':
         log_data()
         # Update start_time and previous_path
         start_time = datetime.now()
-        previous_path = 'Map'
+        previous_path = 'Missions'
     
     # Every time the user requests /overview route, time spent in the previous path is recorded in the database with log_data(). 
     if request.path == '/overview':
@@ -174,9 +174,9 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/map')
+@app.route('/missions')
 def map():
-    return render_template('map.html')
+    return render_template('missions.html')
 
 @app.route('/overview')
 def overview():
