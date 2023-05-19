@@ -131,6 +131,14 @@ h6 {
 # Navigation Bar
 --------------------------------------------------------------*/
 
+.mission-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
 #mainNav {
   background-color: var(--color-default);
   color: var(--color-secondary);
@@ -198,17 +206,125 @@ section {
   padding-bottom: 20px;
 }
 
-.map-subtitle{
-  text-align: center;
-  font-weight: bold;
-  color: var(--color-primary);
-}
-
 #verification-message {
   display: none; 
   color: var(--color-primary);
   text-align: center;
   border-radius: 5px;
+}
+
+/*--------------------------------------------------------------
+# Missions carousel
+--------------------------------------------------------------*/
+#carousel-2{
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  z-index: 1;
+}
+
+#carousel-2 .carousel-inner {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+#carousel-2 img{
+  width: 100%;
+  min-height: 100vh;
+  display: block;
+  z-index: 0;
+}
+
+#carousel-2 .carousel-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;;
+  z-index: 1;
+  padding: 40px;
+}
+
+#carousel-2 .carousel-content h1 {
+    font-size: 8vw;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    line-height: 1;
+    padding-bottom: 20px;
+}
+
+#carousel-2 .carousel-content h2 {
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--color-default);
+  display: inline-block;
+  position: relative;
+}
+
+#carousel-2 .carousel-text {
+  position: relative;
+  top: 50%; /* Adjust the value to position the container below the h1 element */
+  left: 50%;
+  transform: translate(-50%, -5%);
+  background-color: rgba(255, 255, 255, 0.95);
+  color: var(--color-default);
+  padding: 40px;
+  max-width: 600px; /* Set a maximum width if desired */
+}
+
+.dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3); /* Adjust the background color and opacity as needed */
+  opacity: 1;
+}
+
+#carousel-2 .btn-location {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 40px;
+  color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
+}
+
+#carousel-2 .btn-location:hover {
+  background: var(--color-primary);
+}
+
+/*--------------------------------------------------------------
+# Missions carousel
+--------------------------------------------------------------*/
+
+.btn-learn-more {
+  font-family: var(--font-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 30px;
+  transition: 0.5s;
+  margin: 20px;
+  color: var(--color-default);
+  border: 2px solid var(--color-primary);
+}
+
+.btn-learn-more:hover {
+  background: var(--color-primary);
 }
 
 .img-normal {
@@ -247,15 +363,6 @@ section {
   margin-bottom: 10px;
 }
 
-.map-card-title{
-  font-weight: bold;
-  font-size: 16px;
-}
-
-.map-card{
-  font-size: 14px;
-}
-
 .con-button{
   text-align: center;
 }
@@ -264,20 +371,6 @@ section {
   font-weight: bold;
   padding-bottom: 15px;
   padding-top: 15px;
-}
-
-#map{
-    position: relative;
-    height: 80vh;
-}
-
-#map-container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0%;
-    padding: 0%;
-    overflow: hidden; 
 }
 
 .location-container {

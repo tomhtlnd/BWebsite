@@ -7,7 +7,7 @@
 {% endblock %}
 
 {% block body %}
-    <nav class="navbar navbar-dark navbar-expand-md bg-dark navbar-shrink" style="background: rgb(0, 0, 0);">
+    <nav class="navbar mission-nav navbar-dark navbar-expand-md bg-dark navbar-shrink">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
@@ -26,9 +26,125 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/follow_up">Follow up</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="/confirmation" role="button">Back to the survey</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
+
+    <div id="carousel-2" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://www.holland.com/upload_mm/3/c/c/76096_fullimage_fietsen%20door%20amsterdam%20rosshelen%20via%20shutterstock.jpg" alt="Slide Image" />
+                <div class="dark-overlay">
+                    <div class="carousel-content">
+                        <h1>Daily Mobility</h1>
+                        <div class="carousel-text">
+                            <h2> Find an Albert Heijn outside the city center </h2>
+                            <p> Discover how people make their daily trip to the supermarket and how this relates to infrastructure and the surrounding environment.  </p>
+                        </div>
+                        <a href="/pondok_event_center" class="btn-location"> Complete missions! </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/img/UCI Photos/ov-fiets_eCCagB6.jpg" alt="Slide Image" />
+                <div class="dark-overlay">
+                    <div class="carousel-content">
+                        <h1> OV-fiets system </h1>
+                        <div class="carousel-text">
+                            <h2> Find a person supervising “OV-Fiets” </h2>
+                            <p> Learn what the OV-fiets system is and how it fits into Amsterdam's transportation system. </p>
+                        </div>
+                        <a href="/lelylaan_station" class="btn-location"> Complete missions! </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/img/UCI Photos/land-use.jpg" alt="Slide Image" />
+                <div class="dark-overlay">
+                    <div class="carousel-content">
+                        <h1> Land use </h1>
+                        <div class="carousel-text">
+                            <h2> Find Heemstedestraat and stop at the crossing of Westlandgracht </h2>
+                            <p> Learn more about Amsterdam's trend toward a more livable and sustainable urban environment and how land use is related to people's preferred mode of transportation. </p>
+                        </div>
+                        <a href="/heemstedestraat" class="btn-location"> Complete missions! </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/img/UCI Photos/rinke-dohmen-ZX9c2LkNIms-unsplash.jpg" alt="Slide Image" />
+                <div class="dark-overlay">
+                    <div class="carousel-content">
+                        <h1> Traffic flow </h1>
+                        <div class="carousel-text">
+                            <h2> Go to central station and find the bike tunnel leading to the ferries </h2>
+                            <p> Understand how modal transitions work and how traffic flows in public places.</p>
+                        </div>
+                        <a href="/central_station" class="btn-location"> Complete missions! </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/img/UCI Photos/Jan Pieter Heijestraat 1971.jpg" alt="Slide Image" />
+                <div class="dark-overlay">
+                    <div class="carousel-content">
+                        <h1> History & culture </h1>
+                        <div class="carousel-text">
+                            <h2> Find an Albert Heijn in the city centre near Sint Antoniesbreestraat </h2>
+                            <p> Explore the infrastructure transformation and urban developements since the 1960s. </p>
+                        </div>
+                        <a href="/sint_antoniesbreestraat" class="btn-location"> Complete missions! </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/img/UCI Photos/traffic-infrastructure.jpg" alt="Slide Image" />
+                <div class="dark-overlay">
+                    <div class="carousel-content">
+                        <h1> Traffic infrastructure </h1>
+                        <div class="carousel-text">
+                            <h2> Observe the tram adjacent to the botanical gardens (Hortus Botanicus) </h2>
+                            <p> Understand how the tram infrastructure is designed and why it rides on grass.  </p>
+                        </div>
+                        <a href="/botanical_gardens" class="btn-location"> Complete missions! </a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../static/img/UCI Photos/filip-mishevski-7zpbeV1E7ps-unsplash.jpg" alt="Slide Image" />
+                <div class="dark-overlay">
+                    <div class="carousel-content">
+                        <h1> Bike parking </h1>
+                        <div class="carousel-text">
+                            <h2> Park your bike at the underground bike parking garage at the University (on Nieuwe Achtergracht) </h2>
+                            <p> Learn about the significant role of parking in the shift towards more sustainable and more equitable transportation modes, such as public transit, walking, and cycling.  </p>
+                        </div>
+                        <a href="/roeterseiland_campus" class="btn-location"> Complete missions! </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a class="carousel-control-prev" href="#carousel-2" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span></a><a class="carousel-control-next" href="#carousel-2" role="button" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span>
+                </a>
+            </div>
+        <ol class="carousel-indicators">
+            <li class="active" data-bs-target="#carousel-2" data-bs-slide-to="0"></li>
+            <li data-bs-target="#carousel-2" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carousel-2" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carousel-2" data-bs-slide-to="3"></li>
+            <li data-bs-target="#carousel-2" data-bs-slide-to="4"></li>
+            <li data-bs-target="#carousel-2" data-bs-slide-to="5"></li>
+            <li data-bs-target="#carousel-2" data-bs-slide-to="6"></li>
+            <li data-bs-target="#carousel-2" data-bs-slide-to="7"></li>
+        </ol>
+    </div>
 
 {% endblock %}
