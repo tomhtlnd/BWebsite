@@ -258,7 +258,7 @@ section {
 
 #carousel-2 .carousel-content {
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;;
@@ -272,15 +272,16 @@ section {
     text-transform: uppercase;
     color: var(--color-secondary);
     line-height: 1;
+    padding-top: 40px;
     padding-bottom: 20px;
 }
 
 #carousel-2 .carousel-content h2 {
   font-size: 20px;
   letter-spacing: 2px;
-  font-family: var(--font-primary);
+  font-family: var(--font-secondary);
   font-weight: 700;
-  color: var(--color-default);
+  color: var(--color-secondary);
   display: inline-block;
   position: relative;
 }
@@ -290,10 +291,10 @@ section {
   top: 50%; /* Adjust the value to position the container below the h1 element */
   left: 50%;
   transform: translate(-50%, -5%);
-  background-color: rgba(255, 255, 255, 0.95);
-  color: var(--color-default);
-  padding: 40px;
-  max-width: 600px; /* Set a maximum width if desired */
+  background-color: rgba(57, 62, 70, 0.2);
+  color: var(--color-secondary);
+  padding: 25px;
+  max-width: 800px; /* Set a maximum width if desired */
 }
 
 .dark-overlay {
